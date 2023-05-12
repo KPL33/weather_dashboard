@@ -19,7 +19,7 @@ h1 {
 
 .col-sm-4 {
     background-color: #340f0f;
-    height: 50vh;
+    height: 100vh;
     padding: 20px;
     
 }
@@ -36,8 +36,7 @@ h1 {
     display: flex;
     align-items: top;
     display: flex;
-    justify-content: center;
-    background-color: #c61b1b;
+    justify-content: left;
 }
 
 h2 {
@@ -45,6 +44,11 @@ h2 {
     width: 100%;
     text-align: left;
     font-size: 30px;
+}
+
+h4 {
+    align-items: top;
+    margin-bottom: 50px;
 }
 
 .btn-primary {
