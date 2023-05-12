@@ -14,7 +14,7 @@ let cities = [];
 if (localStorage.getItem('cities')) {
   cities = JSON.parse(localStorage.getItem('cities'));
 
-  for (let i = Math.max(cities.length - 4, 0); i < cities.length; i++) {
+  for (let i = Math.max(cities.length - 10, 0); i < cities.length; i++) {
     let cityDiv = document.createElement("h5");
     cityDiv.textContent = cities[i];
     historyDiv.appendChild(cityDiv);
@@ -52,7 +52,7 @@ async function getWeather(cityName) {
   const humidity = data.main.humidity;
   const unixTime = data.dt;
   const date = new Date(unixTime * 1000);
-  const formattedDate = date.toLocaleString({
+  const formattedDate = date.toLocaleDateString({
     year: '4-digit',
     month: '2-digit',
     day: '2-digit',
